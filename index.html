@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <!-- tailwind stylesheet  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center mt-8">This is a simple calculator</h1>
+    </header>
+    <main>
+        <section class="w-3/4  mx-auto">
+            <div class=" grid grid-cols-4 mt-8 gap-4 text-center ">
+
+                <!-- top display and input part -->
+                <div class="col-span-4 text-right bg-white-300 p-8 border-4 rounded">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2">
+                            <input id="display-screen-top" type="text" class="w-full text-3xl" placeholder="0">
+                        </div>
+                        <div>
+                            <input id="display-screen-left" type="text" class="w-full text-3xl " placeholder="+ - * /">
+                        </div>
+                        <div>
+                            <input id="display-screen" type="text" class="w-full text-3xl text-right border-0"
+                                placeholder="0">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- calculator different button part -->
+                <div id="1" class="bg-red-200 text-3xl text-3xl p-4 rounded-full click-button">
+                    <button class="font-semibold ">1</button>
+                </div>
+
+                <div id="2" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold ">2</button>
+                </div>
+
+                <div id="3" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">3</button>
+                </div>
+
+                <div id="4" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">4</button>
+                </div>
+
+                <div id="5" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">5</button>
+                </div>
+
+                <div id="6" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">6</button>
+                </div>
+
+                <div id="7" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">7</button>
+                </div>
+
+                <div id="8" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">8</button>
+                </div>
+
+                <div id="9" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">9</button>
+                </div>
+
+                <div id="0" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">0</button>
+                </div>
+
+                <div id="+" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">+</button>
+                </div>
+
+                <div id="-" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">-</button>
+                </div>
+
+                <div id="*" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">*</button>
+                </div>
+
+                <div id="/" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">/</button>
+                </div>
+
+                <div id="=" class="bg-red-200 text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">=</button>
+                </div>
+
+                <div id="lc" class="bg-red-200 text-2xl lg:text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">C</button>
+                </div>
+                <div id="clr" class="bg-red-200 text-2xl lg:text-3xl p-4 rounded-full click-button">
+                    <button id="" class="font-semibold">AC</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- java Script  -->
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>
