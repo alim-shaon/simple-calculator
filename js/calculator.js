@@ -36,9 +36,9 @@ for (const clicked of clickButton) {
 
         //Work in progress (remove element from string)
         else if (clickedValueText == 'C') {
-            const kk = displayScreen.value;
-            console.log(typeof kk, kk);
-            console.log(kk[3]);
+            displayScreen.value = displayScreen.value.slice(0, (displayScreen.value.length - 1));
+            //with substr
+            // displayScreen.value = displayScreen.value.substr(0, (displayScreen.value.length - 1));
         }
         //-----to display multiple number in the screen
         else {
